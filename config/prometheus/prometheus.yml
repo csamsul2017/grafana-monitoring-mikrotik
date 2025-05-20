@@ -3,7 +3,7 @@ global:
   evaluation_interval: 10s
 
 scrape_configs:
-  - job-name: 'prometheus'
+  - job_name: 'prometheus'
     scrape_interval: 5s
     static_configs:
       - targets: ['localhost:9090']
