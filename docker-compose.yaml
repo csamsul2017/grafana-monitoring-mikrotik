@@ -24,3 +24,9 @@ services:
       - monitoring
     ports:
       - 9090:9090
+
+  snmp_exporter:
+    image: prom/snmp-exporter
+    resrtart: unless-stopped
+    networks:
+      - monitoring
