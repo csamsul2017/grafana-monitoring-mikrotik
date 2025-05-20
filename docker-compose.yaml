@@ -25,7 +25,7 @@ services:
     ports:
       - 9090:9090
 
-  snmp_exporter:
+  snmp-exporter:
     image: prom/snmp-exporter
     restart: unless-stopped
     networks:
