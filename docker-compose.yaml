@@ -27,6 +27,6 @@ services:
 
   snmp_exporter:
     image: prom/snmp-exporter
-    resrtart: unless-stopped
+    restart: unless-stopped
     networks:
       - monitoring
